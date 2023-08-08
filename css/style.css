@@ -55,7 +55,7 @@ h5 {
     margin: 0px;
 }
 
-p {
+p, ul, ol, li {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
@@ -75,6 +75,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 100;
 }
 
 .condensedNav {
@@ -171,11 +172,6 @@ nav ul {
     cursor: pointer;
 }
 
-.caseStudyLink {
-    align-self: flex-end;
-    justify-self: flex-end;
-}
-
 .inlineSocials li {
     display: flex;
     column-gap: 20px;
@@ -188,90 +184,22 @@ nav ul {
     padding-bottom: 5px;
 }
 
-/* HERO STYLING */
-
-.heroSection {
-    /* view height - top nav height - bottom arrow height */
-    height: calc(100vh - 200px - 127px);
-    display: flex;
-    column-gap: 180px;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 80px;
-    margin: 200px 0px 0px 0px;
-}
-
-.heroSection span {
+/* JUMBOTRON STYLING */
+.jumbotron {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-    width: 80%;
-}
-
-.dividerLine {
-    height: 2px;
-    width: 100%;
-    background-color: var(--darkGrey);
-}
-
-.heroSection img {
-    width: 30%;
-    border-radius: 100%;
-}
-
-.downIconContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px 0px;
-    bottom: 0px;
+    padding: 145px 40px 40px 40px;
+    background-color: transparent;
 }
 
-#downIcon {
-    font-size: 40px;
-    animation: bounceAnimation 1s infinite;
+/* CONTAINER STYLING */
+.primarySection {
+    padding: 40px 0px 40px 0px;
 }
-
-.workInProgress {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+.secondarySection {
+    padding: 20px 0px 20px 0px;
 }
-
-.devDetails {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 80px;
-    padding-top: 80px;
-}
-
-#githubIconBody {
-    font-size: 400px;
-    color: var(--darkGrey);
-}
-
-@keyframes bounceAnimation {
-    from {
-        margin-top: 7px;
-        margin-bottom: 0px;
-    }
-
-    50% {
-        margin-top: 0px;
-        margin-bottom: 7px;
-    }
-
-    to {
-        margin-top: 7px;
-        margin-bottom: 0px;
-    }
-}
-
 /* FOOTER STYLING */
 footer {
     background-color: var(--darkGreen);
@@ -311,10 +239,6 @@ footer .inlineSocials li {
 /* RECOMMENDED DEVICE SIZES FROM W3SCHOOLS (https://www.w3schools.com/css/css_rwd_mediaqueries.asp) */
 /* small desktop screens */
 @media only screen and (max-width: 1200px) {
-    .heroSection {
-        gap: 80px;
-    }
-
     h1 { font-size: 96px; }
     
     h2 { font-size: 48px; }
@@ -336,29 +260,8 @@ footer .inlineSocials li {
         display: none;
     }
 
-    .heroSection {
-        height: calc(100vh - 80px - 127px);
-        flex-direction: column;
-        gap: 40px;
-        padding: 0px 40px;
-        margin: 80px 0px 0px 0px;
-    }
-
-    .heroSection span {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        row-gap: 10px;
-        width: 80%;
-    }
-
-    #githubIconBody {
-        font-size: 300px;
-    }
-
-    .devDetails {
-        flex-direction: column;
+    .jumbotron {
+        padding: 100px 20px 20px 20px;
     }
 
     footer {
@@ -381,20 +284,7 @@ footer .inlineSocials li {
 }
 
 @media only screen and (max-width: 768px) {
-    .heroSection {
-        height: calc(100vh - 80px - 87px);
-        padding: 0px 20px;
-    }
-
-    #githubIconBody {
-        font-size: 150px;
-    }
-
-    .downIconContainer {
-        padding: 20px 0px;
-    }
-
     a { font-size: 16px; }
 
-    p { font-size: 16px; }
+    p, ul, ol, li { font-size: 16px; }
 }
