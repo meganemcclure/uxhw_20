@@ -55,12 +55,27 @@
             <img src="./images/BuddySystem Mockup.jpg" class="img-fluid">
         </div>
 
-        <div class="container">
-            <div class="primarySecion">
-                <nav class="secondarySection">
-                    <!-- bootstrap navigation -->
-                </nav>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <h5 class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to a Section</h5>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#projectOverview">Project Overview</a>
+                            <a class="dropdown-item" href="#phaseOne">Phase 1: User Research</a>
+                            <a class="dropdown-item" href="#phaseTwo">Phase 2: Problem Definition</a>
+                            <a class="dropdown-item" href="#phaseThree">Phase 3: Ideation</a>
+                            <a class="dropdown-item" href="#phaseFour">Phase 4: Low Fidelity Prototyping</a>
+                            <a class="dropdown-item" href="#phaseFive">Phase 5: Usability Testing & Iterations</a>
+                            <a class="dropdown-item" href="#phaseSix">Phase 6: Final Thoughts</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
+        <div class="container">        
+            <div class="primarySection">
                 <div class="secondarySection">
                     <h3>The Problem</h3>
                     <p>
@@ -93,7 +108,8 @@
                 </div>
             </div>
 
-            <div class="primarySecion">
+            <div class="primarySection">
+                <a class="anchor" id="projectOverview"></a>
                 <h2>Project Overview</h2>
                 <div class="secondarySection row">
                     <div class="col-sm">
@@ -131,7 +147,8 @@
                 </div>
             </div>
 
-            <div class="primarySecion">
+            <div class="primarySection">
+                <a class="anchor" id="phaseOne"></a>
                 <h2>Phase 1: User Research</h2>
                 <p>
                     Our team executed a series of 5 interviews with individuals from the target 
@@ -168,7 +185,8 @@
                 </div>
             </div>
 
-            <div class="primarySecion">
+            <div class="primarySection">
+                <a class="anchor" id="phaseTwo"></a>
                 <h2>Phase 2: Problem Definition</h2>
                 <div class="secondarySection">
                     <h3>Problem Statement</h3>
@@ -184,7 +202,8 @@
                 </div>
             </div>
 
-            <div class="primarySecion">
+            <div class="primarySection">
+                <a class="anchor" id="phaseThree"></a>
                 <h2>Phase 3: Ideation</h2>
                 <div class="secondarySection">
                     <h3>Ideation & Brainstorming</h3>
@@ -227,7 +246,8 @@
                 </div>
             </div>
 
-            <div class="primarySecion">
+            <div class="primarySection">
+                <a class="anchor" id="phaseFour"></a>
                 <h2>Phase 4: Low Fidelity Prototyping</h2>
                 <div class="secondarySection">
                     <p>
@@ -247,6 +267,7 @@
             </div>
 
             <div class="primarySection">
+                <a class="anchor" id="phaseFive"></a>
                 <h2>Phase 5: Usability Testing & Iterations</h2>
                 <p>
                     Next up we completed 2 rounds user testing an iteration on our lo-fi prototypes. Why 
@@ -255,35 +276,46 @@
 
                 <div class="secondarySection">
                     <h3>Key Learnings from Usability Testing</h3>
-                    <p>
-                        <b>Problem:</b> The swipe behaviour for the onboarding was not clear to users. Many 
-                        wanted to tap on the arrows instead of swipe, and about 50% of the users who picked 
-                        up on the swipe behaviour thought the arrow was telling them to swipe in the opposite 
-                        direction.
-                    </p>
-                    <p>
-                        <b>Solution:</b> Update swipe to tap.
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                        <b>Problem:</b> Difference between the recommended section vs the existing section 
-                        was not clear to users. They often didn't know if the buddies, groups, and events 
-                        they were seeing were new (recommended) or ones they had already connected with.
-                    </p>
-                    <p>
-                        <b>Solution:</b> Update layout - emphasize recommended at the top.
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                        <b>Problem:</b> Many users noted that staring off with an 'About Me' questionnaire 
-                        made it feel like a hookup application (oops, not our intention, platonic friends 
-                        only!)
-                    </p>
-                    <p>
-                        <b>Solution:</b> lead with interests before jumping into a questionnaire.
-                    </p>
+                    <div class="media">
+                        <div class="align-self-center">
+                            <p>
+                                <b>Problem:</b> The swipe behaviour for the onboarding was not clear to users. Many 
+                                wanted to tap on the arrows instead of swipe, and about 50% of the users who picked 
+                                up on the swipe behaviour thought the arrow was telling them to swipe in the opposite 
+                                direction.
+                            </p>
+                            <p>
+                                <b>Solution:</b> Update swipe to tap.
+                            </p>
+                        </div>
+                        <img class="align-self-center img-fluid col-4" src="./images/Hi-Fi 1.jpg">
+                    </div>
+                    <div class="media">
+                        <div class="align-self-center">
+                            <p>
+                                <b>Problem:</b> Difference between the recommended section vs the existing section 
+                                was not clear to users. They often didn't know if the buddies, groups, and events 
+                                they were seeing were new (recommended) or ones they had already connected with.
+                            </p>
+                            <p>
+                                <b>Solution:</b> Update layout - emphasize recommended at the top.
+                            </p>
+                        </div>
+                        <img class="align-self-center img-fluid col-4" src="./images/Hi-Fi 1.jpg">
+                    </div>
+                    <div class="media">
+                        <div class="align-self-center">
+                            <p>
+                                <b>Problem:</b> Many users noted that staring off with an 'About Me' questionnaire 
+                                made it feel like a hookup application (oops, not our intention, platonic friends 
+                                only!)
+                            </p>
+                            <p>
+                                <b>Solution:</b> lead with interests before jumping into a questionnaire.
+                            </p>
+                        </div>
+                        <img class="align-self-center img-fluid col-4" src="./images/Hi-Fi 1.jpg">
+                    </div>
                 </div>
 
                 <div class="secondarySection">
@@ -312,6 +344,7 @@
             </div>
 
             <div class="primarySection">
+                <a class="anchor" id="phaseSix"></a>
                 <h2>Phase 6: Final Thoughts</h2>
                 <div class="secondarySection">
                     <h3>Hi-Fi Mockups</h3>
@@ -398,6 +431,11 @@
             </div>
         </div>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <footer>
         <h2>get in touch</h2>
         <div class="footerDivider footerColor"></div>

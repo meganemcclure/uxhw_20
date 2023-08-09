@@ -68,7 +68,7 @@ a {
 }
 
 /* NAVBAR STYLING */
-nav {
+.condensedNav, .classicNav {
     background: linear-gradient(180deg, var(--offWhite), 90%, var(--transparentOffWhite));
     position: fixed;
     top: 0;
@@ -80,7 +80,6 @@ nav {
 
 .condensedNav {
     display: none;
-    z-index: 10;
     height: 80px;
 }
 
@@ -117,7 +116,7 @@ nav {
     background: var(--offWhite);
 }
 
-nav ul {
+.condensedNav ul, .classicNav ul {
     padding: 0;
     margin: 40px;
     list-style: none;
@@ -200,6 +199,14 @@ nav ul {
 .secondarySection {
     padding: 20px 0px 20px 0px;
 }
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -145px;
+    visibility: hidden;
+}
+
 /* FOOTER STYLING */
 footer {
     background-color: var(--darkGreen);
@@ -262,6 +269,10 @@ footer .inlineSocials li {
 
     .jumbotron {
         padding: 100px 20px 20px 20px;
+    }
+
+    .anchor {
+        top: -100px;
     }
 
     footer {
